@@ -21,14 +21,14 @@ $("#cityToSearchButton").on("click", function (e) {
   }
 });
 console.log(citiesSearchedHistory);
-
+// this function gets the history
 function getHistory(data) {
   console.log('getHistory called');
   
   let historyEl = document.getElementById('history');
   historyEl.innerHTML = '';
   console.log(historyEl);
-  for (let i = 0; i < 5; i++) { 
+  for (let i = 0; i < 5; i++) { //this div calls the function when clicked
     $("#history").append(`
     <section class="card">
     <h4 type="button" onclick='executeWeatherGetCall("${data[i]}")' class="cityBtn">${data[i]}</h4>
@@ -37,7 +37,7 @@ function getHistory(data) {
   }
   const historyBtnEl = $('')
 }
-
+//this function that calls the API
 function executeWeatherGetCall(cityToSearchVal) {
   var uri = "https://api.openweathermap.org/data/2.5/weather?q=" + cityToSearchVal + "&appid=" + apiKey + "&units=imperial";
   fetch(uri)

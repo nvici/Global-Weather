@@ -17,22 +17,23 @@
       <h1>Global Weather</h1>
     </header>
 
-      <div class="container">       
+      <div class="container">    
+        <!--Content-->   
   
-            
+             <!--Search for a city--> 
           <ul class="list-group">
               <li class="list-group-item">Search For City<input type="text" id="cityToSearchInput" >
               </input><button id="cityToSearchButton"> search</button></li>
               <div id="history"></div>
            </ul>
   
-          
+           <!--localStorage of searched cities--> 
           <ul class="list-group">
 
           </ul>
           <div id="searchResults" style="display:none;">
   
-            
+             <!--bootstrap card classes that display weather--> 
               <div class="card" style="width: 18rem;">
                   
                   <div id="0" class="card-body">
@@ -76,8 +77,12 @@
                   </div>
               </div>
           </div>
+            <!--this is the bootstrap card class the displays the future 5 day weather--> 
+
+
             
       </div>
+       <!--JQuery links and JS--> 
       <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

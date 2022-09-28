@@ -1,4 +1,6 @@
+/*header background color*/
 .gradient {
-    background-image: linear-gradient(to right, rgb(52, 94, 183) , rgb(36, 1, 96));
+    background: rgb(74,230,230);
+    background: linear-gradient(90deg, rgba(74,230,230,0) 0%, rgba(102,233,255,1) 0%, rgba(29,35,185,1) 100%);
     color: white;
 }
